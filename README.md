@@ -1,5 +1,7 @@
-# hermes-agent
+# image
 
-Derived image: the official NousResearch Hermes Agent plus the GitHub CLI (`gh`),
-for the self-hosted gateway in the homelab cluster. Published to
-`ghcr.io/dvjn/hermes-agent`. Base image pinned in the Containerfile; bump via renovate.
+Derived container image: the official NousResearch Hermes Agent base plus the
+GitHub CLI (`gh`), for the self-hosted `dage` gateway in the homelab cluster.
+
+Published to `ghcr.io/dvjn-agent/image` by `.github/workflows/ci.yaml`. The base
+image is pinned in the `Containerfile`; bump it via renovate.
