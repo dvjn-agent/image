@@ -19,4 +19,5 @@ RUN mise install \
  && mise reshim \
  && ln -sf /opt/mise/shims/* /usr/local/bin/ \
  && chmod -R a+rX /opt/mise \
- && rm -rf /tmp/mise
+ && rm -rf /tmp/mise \
+ && gh --version
