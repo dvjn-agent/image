@@ -17,5 +17,6 @@ RUN curl -fsSL https://mise.run | MISE_VERSION=${MISE_VERSION} MISE_INSTALL_PATH
 COPY mise.toml /opt/mise/config.toml
 RUN mise install \
  && mise reshim \
+ && ln -sf /opt/mise/shims/* /usr/local/bin/ \
  && chmod -R a+rX /opt/mise \
  && rm -rf /tmp/mise
